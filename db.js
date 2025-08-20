@@ -3,12 +3,9 @@ require('dotenv').config();
 
 // define the mongodb connection URL
 
-//const mongoURL =  process.env.MONGODB_URL_LOCAL;; //Replace 'mydatabases' with your databases name
-
-
+// const mongoURL =  process.env.MONGODB_URL_LOCAL;; //Replace 'mydatabases' with your databases name
 
 const mongoURL = process.env.MONGODB_URL;
-//const uri = "mongodb+srv://@cluster0.abcde.mongodb.net/hotels_data?retryWrites=true&w=majority";//
 
 
 

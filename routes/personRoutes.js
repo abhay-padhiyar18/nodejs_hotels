@@ -1,10 +1,11 @@
 const express = require("express");
-
 const router = express.Router();
 const Person = require("./../models/Person");
-const { update } = require("lodash");
 
-// ✅ POST route to add a person
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+
+//  POST route to add a person
 router.post("/", async (req, res) => {
   try {
     const data = req.body;
@@ -94,7 +95,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete("/:id", async (req, res) => {
   try {
     const personId = req.params.id;
 
